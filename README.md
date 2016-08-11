@@ -15,7 +15,7 @@ Aug 10 09:25:08 Maximilians-iMac kernel[0]: 034851.758664 AppleUSBCDCCompositeDe
 I noticed that Apple USB Hub in Apple Keyboard however works in El Capitan.
 
 The properties injected by this kext are copied from *Apple Aluminium Keyboard Properties*
-from *AppleUSBHub.kext* driver (see here: *System/Library/Extensions/IOUSBHostFamily.kext/Contents/PlugIns/AppleUSBHub.kext/Contents/Info.plist*).
+from *AppleUSBHub.kext* driver (see here: */System/Library/Extensions/IOUSBHostFamily.kext/Contents/PlugIns/AppleUSBHub.kext/Contents/Info.plist*).
 
 ## Installation
 
