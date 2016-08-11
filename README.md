@@ -23,7 +23,7 @@ from *AppleUSBHub.kext* driver (see here: *System/Library/Extensions/IOUSBHostFa
 (you can find them by looking at idProduct and idVendor properties in `ioreg -c IOUSBHostDevice -r -l -w0` output).
 2. Run `make install` as root user.
 
-Note: This kext is not signed. You need either to [disable SIP](http://apple.stackexchange.com/questions/208478/how-do-i-disable-system-integrity-protection-sip-aka-rootless-on-os-x-10-11) or sign it (see [Signing](#Signing) below).
+Note: This kext is not signed. You need either to [disable SIP](http://apple.stackexchange.com/questions/208478/how-do-i-disable-system-integrity-protection-sip-aka-rootless-on-os-x-10-11) or sign it (see [Signing](#signing) below).
 
 ## Testing
 
