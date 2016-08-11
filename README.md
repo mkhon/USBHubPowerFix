@@ -29,6 +29,7 @@ Note: This kext is not signed. You need either to [disable SIP](http://apple.sta
 
 1. Run `kextload /Library/Extensions/USBHubPowerFix.kext` or `make load`
 2. Check the output of `ioreg -c IOUSBHostDevice -r -l -w0` - *kUSBConfigurationCurrentOverride* property should appear in the output.
+3. Please send me (as pull request or to fjoe@samodelkin.net) product id, vendor id and USB hub name if the fix works.
 
 ## Signing
 
