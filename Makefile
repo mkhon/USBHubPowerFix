@@ -1,12 +1,13 @@
 KEXT=	USBHubPowerFix.kext
+SUDO=	sudo
 DESTDIR=/Library/Extensions
 
 all:
 
 install:
-	cp -R ${KEXT} ${DESTDIR}
-	chown -R root:wheel ${DESTDIR}/${KEXT}
-	chmod -R og-w ${DESTDIR}/${KEXT}
+	${SUDO} cp -R ${KEXT} ${DESTDIR}
+	${SUDO} chown -R root:wheel ${DESTDIR}/${KEXT}
+	${SUDO} chmod -R og-w ${DESTDIR}/${KEXT}
 
 load:
-	kextload ${DESTDIR}/${KEXT}
+	${SUDO} kextload ${DESTDIR}/${KEXT}

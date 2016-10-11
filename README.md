@@ -21,13 +21,13 @@ from *AppleUSBHub.kext* driver (see here: */System/Library/Extensions/IOUSBHostF
 
 1. Edit Vendor and Product ids to match your hub in *USBHubPowerFix.kext/Contents/Info.plist*
 (you can find them by looking at idProduct and idVendor properties in `ioreg -c IOUSBHostDevice -r -l -w0` output).
-2. Run `make install` as root user.
+2. Run `make install`.
 
 Note: This kext is not signed. You need either to [disable SIP](http://apple.stackexchange.com/questions/208478/how-do-i-disable-system-integrity-protection-sip-aka-rootless-on-os-x-10-11) or sign it (see [Signing](#signing) below).
 
 ## Testing
 
-1. Run `kextload /Library/Extensions/USBHubPowerFix.kext` or `make load`
+1. Run `sudo kextload /Library/Extensions/USBHubPowerFix.kext` or `make load`
 2. Check the output of `ioreg -c IOUSBHostDevice -r -l -w0` - *kUSBConfigurationCurrentOverride* property should appear in the output.
 3. Please send me (as pull request or to fjoe@samodelkin.net) product id, vendor id and USB hub name if the fix works.
 
