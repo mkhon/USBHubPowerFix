@@ -35,4 +35,5 @@ Note: This kext is not signed. You need either to [disable SIP](http://apple.sta
 
 You need to have Apple Developer Program subscription and [request a kext signing certificate](https://developer.apple.com/contact/kext/).
 
-TBD
+1. Modify IDENTITY= in Makefile
+2. Run `make sign`
